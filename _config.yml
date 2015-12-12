@@ -1,0 +1,60 @@
+favicon: /favicon.png
+cover: http://lingyucoder-demo.qiniudn.com/imgsliders_1.jpg
+avatar: https://avatars1.githubusercontent.com/u/2663351?v=3&s=460
+
+##多说
+#duoshuo: 你的多说id
+
+##百度统计
+#baidu_tongji: 你的百度统计token
+
+##侧边栏包含的组件
+## self：头像 + 名字
+## social：社交链接，配置见social
+## friends：友情链接，可配置friends
+## categories：文章分类
+## tags：文章标签
+## archives：归档
+widgets:
+  - self
+#  - social
+#  - friends
+  - categories
+  - tags
+  - archives
+
+##友情链接配置
+##格式
+## friends
+##   -
+##     name: 好友名称
+##     url: 好友链接地址
+##   -
+##     name: 好友名称
+##     url: 好友链接地址
+
+##社交链接配置
+##格式
+## social
+##   -
+##      type: 社交类型，可用类型有：weibo,github,atom,twitter,facebook,email
+##      url: 社交网站完整地址
+
+## social:
+##   -
+##     type: weibo
+##     url: http://weibo.com/lingyucoder/home
+##   -
+##     type: github
+##     url: https://github.com/LingyuCoder
+##   -
+##     type: atom
+##     url: /atom.xml
+##   - type: twitter
+##     url: https://twitter.com/LingyuCoder
+##   -
+##     type: facebook
+##     url: https://www.facebook.com/profile.php?id=100005242330932
+##   -
+##     type: email
+##     url: lingyucoder@gmail.com

@@ -1,0 +1,43 @@
+@size: 40px;
+@right: 40px;
+@bottom: 40px;
+.cp-totop {
+  position: absolute;
+  width: @size;
+  height: @size;
+  right: @right;
+  bottom: @bottom;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 999999;
+  cursor: pointer;
+  transition: all .2s ease-out;
+  &.hide {
+    opacity: 0;
+    pointer-events: none;
+  }
+  .icon-totop {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    &:before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      border-bottom: @size/4 solid #fff;
+      border-right: @size/4 solid transparent;
+      border-left: @size/4 solid transparent;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      width: @size/4;
+      height: @size/4;
+      top: @size/4;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #fff;
+    }
+  }
+}

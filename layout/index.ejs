@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title><%= config.title %></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <% if (theme.favicon){ %>
+    <link rel="icon" href="<%- theme.favicon %>">
+  <% } %>
+
+	<% if (theme.baidu_tongji){ %>
+		<script>
+		var _hmt = _hmt || [];
+		(function() {
+		 var hm = document.createElement("script");
+		 hm.src = "//hm.baidu.com/hm.js?<%= theme.baidu_tongji %>";
+		 var s = document.getElementsByTagName("script")[0];
+		 s.parentNode.insertBefore(hm, s);
+		})();
+		</script>
+  <% } %>
+</head>
+<body>
+	<script type="text/javascript" src="js/blog.js"></script>
+</body>
+</html>
